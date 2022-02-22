@@ -1,0 +1,69 @@
+/* ====================
+=======Structure======
+======================*/
+
+
+/*====================
+======Typography======
+======================*/
+
+
+/*====================
+========Image=========
+======================*/
+
+img {
+    max-width: 100%;
+    
+}
+
+/*====================
+=======Header=========
+======================*/
+
+
+/*====================
+=======Footer=========
+======================*/
+
+
+@media (max-width: 479px) {
+    .desktop-one-column{
+        display: block;
+    }
+
+    .desktop-one-column .column{
+        width: 100%;
+    }
+
+   .desktop-two-columns{
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .desktop-two-columns .column{
+       width: 48%;
+   }
+
+   
+    @media (max-width: 479px) {
+        .mobile-one-column{
+            display: block;
+        }
+
+        .mobile-one-column column{
+            width: 100%;
+        }
+
+        .mobile-two-columns{
+            display: flex;
+        }
+
+        .mobile-two-columns column{
+            width: 48%;
+        }
+    }
+
+    
+
+}
