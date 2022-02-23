@@ -39,11 +39,11 @@ img {
    .desktop-two-columns{
        display: flex;
        justify-content: space-between;
-   }
+    }
 
    .desktop-two-columns .column{
        width: 48%;
-   }
+    }
 
    
     @media (max-width: 479px) {
