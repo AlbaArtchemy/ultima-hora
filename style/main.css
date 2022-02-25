@@ -1,12 +1,101 @@
-/* ====================
+/*====================
 =======Structure======
 ======================*/
 
+body{
+    display:flex; 
+    flex-direction:column;    
+    min-height: 100vh;
+}
+
+header{}
+
+main{
+    margin: 1em auto;
+    width: 90%;
+}
+
+footer{}
+
+/*====================
+======Columns=========
+======================*/
+/* 
+.desktop-one-column{
+    display: block;
+}
+
+.desktop-one-column .column{
+    width: 100%;
+}
+
+.desktop-two-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-two-columns .column{
+    width: 48%;
+}
 
 /*====================
 ======Typography======
 ======================*/
 
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(0, 0%, 0%);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto";
+}
+
+h5, h6 {
+    font-family: "Roboto";
+}
+
+a, td, p, button, li{
+    font-family: "Roboto";
+}
+
+h1 {
+    font-size:  2.7rem;;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2 {
+    font-size:  2.05rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h3 {
+    font-size:  1.35rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h4 {
+    font-size:  1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:focus, a:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+}
 
 /*====================
 ========Image=========
@@ -14,56 +103,153 @@
 
 img {
     max-width: 100%;
-    
 }
+
 
 /*====================
 =======Header=========
 ======================*/
 
+.top-bar{
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2em 2%;
+    width: 96%;
+}
+
+.top-bar .news ul{
+    display: flex;
+}
+
+.top-bar .news ul li{
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.top-bar .news ul li:not(:first-child):not(:last-child)::after {
+    padding-left: 0.25rem;
+    content: "-";
+}
+
+.top-bar .news ul li:first-child{
+    color: hsl(0, 100%, 40%);
+    font-weight: 600;
+}
+
+.top-bar .islands ul{
+    display: flex;
+}
+
+.top-bar .islands ul li{
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.top-bar .islands  ul li:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.5rem;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.main-header{
+    background-color: hsl(0, 100%, 40%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2%;
+    width: 96%;
+}
+
+.main-header .hamburger-menu svg{
+    height: 3rem;
+}
+
+.main-header .hamburger-menu svg path{
+    fill:hsl(0, 0%, 100%)
+}
+
+.main-header .logo svg{
+    height: 3rem;
+}
+
+.main-header .logo svg path{
+    fill:hsl(0, 0%, 100%)
+}
+
+.main-header .access-buttons{
+    display: flex;
+}
+
+.main-header .access-buttons button{
+    margin-left: 1rem;
+}
+
+.main-header .access-buttons .login-button button span{
+    display: inline;
+    vertical-align: middle;
+}
+
+.main-header .access-buttons .login-button button svg {
+    display: inline;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+.main-header .access-buttons .register-button button{
+    background-color: hsl(47, 100%, 50%);
+    padding: 0.2rem;
+}
+
+.menu{
+    background-color: hsl(0, 0%, 90%); 
+    padding: 0.5rem 2%;
+    width: 96%; 
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.menu ul li svg{
+    height: 1.5rem;
+}
+
+.menu ul li.search svg{
+    height: 1rem;
+}
 
 /*====================
-=======Footer=========
+=========Ads==========
 ======================*/
 
 
+/*====================
+========News==========
+======================*/
+
+
+
 @media (max-width: 479px) {
-    .desktop-one-column{
+    .mobile-one-column{
         display: block;
     }
 
-    .desktop-one-column .column{
+    .mobile-one-column column{
         width: 100%;
     }
 
-   .desktop-two-columns{
-       display: flex;
-       justify-content: space-between;
+    .mobile-two-columns{
+        display: flex;
     }
 
-   .desktop-two-columns .column{
-       width: 48%;
+    .mobile-two-columns column{
+        width: 48%;
     }
-
-   
-    @media (max-width: 479px) {
-        .mobile-one-column{
-            display: block;
-        }
-
-        .mobile-one-column column{
-            width: 100%;
-        }
-
-        .mobile-two-columns{
-            display: flex;
-        }
-
-        .mobile-two-columns column{
-            width: 48%;
-        }
-    }
-
-    
-
-}
+} 
